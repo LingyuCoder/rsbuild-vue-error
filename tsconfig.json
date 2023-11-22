@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "types": [
+      "webpack-env",
+      "jest",
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "types": [
+        "fcomponent/types",
+        "floan/types"
+      ]
+      // "@vue/composition-api": ["node_modules/@vue/composition-api"]
+    },
+    "lib": [
+      "es2015",
+      "es2016.array.include",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "isolatedModules": false,
+  },
+  "vueCompilerOptions": {
+    "target": 2
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/*.ts",
+    "src/*.tsx",
+    "src/*.vue",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/panda-src",
+    "assets",
+    "src/setupBytedVui.ts"
+  ],
+  "references": [
+   
+  ]
+}
